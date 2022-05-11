@@ -61,9 +61,9 @@ class NaverMoviePipeline(object):
 
     def init_item(self, item, spider):
         if item['title'] == 'None':
-            item['title'] = 'Null'
+            item['title'] = 'None'
         if item['movie_rate'] == 'None':
-            item['movie_rate'] = 'Null'
+            item['movie_rate'] = 'None'
         if item['netizen_rate'] == 'None':
             item['netizen_rate'] = 0.0
         if item['journalist_score'] == 'None':
@@ -75,9 +75,9 @@ class NaverMoviePipeline(object):
         if item['playing_time'] == 'None':
             item['playing_time'] = 0
         if item['opening_date'] == 'None':
-            item['opening_date'] = 'Null'
+            item['opening_date'] = 'None'
         if item['image'] == 'None':
-            item['image'] = 'Null'
+            item['image'] = 'None'
 
 
     def insert_db_movie(self, item, spider):
