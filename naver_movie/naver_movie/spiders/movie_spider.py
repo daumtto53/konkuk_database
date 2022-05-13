@@ -22,7 +22,7 @@ class MovieSpider(scrapy.Spider):
             title = movie_sel.css('.tit > a::text').get(default='')
             # print('title :', title)
 
-            movie_rate = movie_sel.css('.tit > span::text').get(default='RATE NULL')
+            movie_rate = movie_sel.css('.tit > span::text').get(default='')
             # print(movie_rate)
 
             rate_list = movie_sel.css('div.star_t1 > a > span.num::text').getall()
