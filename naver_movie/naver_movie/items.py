@@ -22,9 +22,3 @@ class NaverMovieItem(scrapy.Item):
     playing_time = scrapy.Field()
 
     image = scrapy.Field()
-
-class QuoteItem(scrapy.Item):
-    title = scrapy.Field()
-    tag = scrapy.Field()
-    author = scrapy.Field()
-
